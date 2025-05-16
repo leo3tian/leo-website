@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Entry from "@/components/entry";
 import Link from "@/components/link";
 
@@ -30,7 +29,7 @@ export default function Home() {
               &nbsp;
             </span>
             <span className="transition-all duration-300 hover:bg-gray-200">
-            I'm a developer for Prof. Amy Ko's Wordplay Lab and assistant for the CSE 12x courses at UW.
+            I&apos;m a developer for Prof. Amy Ko&apos;s Wordplay Lab and assistant for the CSE 12x courses at UW.
             </span>
           </div>
         </div>

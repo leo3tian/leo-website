@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useState } from 'react';
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 
-function Entry({title, date, tags, children, imageSrc = "/wordplay1.png"}: {
+function Entry({title, date, children, imageSrc = "/wordplay1.png"}: {
   title: string, 
   date: string, 
   tags: string[], 
