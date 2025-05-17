@@ -10,6 +10,7 @@ interface ModalContent {
 }
 
 interface EntryProps {
+  type: "project" | "experience";
   title: string;
   date: string;
   tags: string[];
@@ -18,7 +19,8 @@ interface EntryProps {
   onClose?: () => void;
 }
 
-export default function Entry({
+export default function Card({
+  type,
   title,
   date,
   tags,
@@ -27,10 +29,13 @@ export default function Entry({
 }: EntryProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  // Determine the border color based on the type
+  const borderColor = type === "project" ? "border-blue-400" : "border-orange-400";
+
   return (
     <>
       <div
-        className="border border-gray-300 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden mb-6 cursor-pointer"
+        className={`border-l-4 ${borderColor} rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden mb-6 cursor-pointer`}
         onClick={() => setIsModalOpen(true)}
       >
         <div className="p-4 bg-white">

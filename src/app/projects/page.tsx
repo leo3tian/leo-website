@@ -1,5 +1,5 @@
-import { projects } from "../../data/projects";
-import Entry from "@/components/entry";
+import { projects } from "../../data/entries";
+import Card from "@/components/card";
 
 export default function Projects() {
   return (
@@ -8,8 +8,9 @@ export default function Projects() {
         <div className="text-2xl font-bold my-4">Projects & Roles</div>
         <hr className="border-skin-line my-4" />
         {projects.map((project, i) => (
-          <Entry
+          <Card
             key={i}
+            type={project.type}
             title={project.title}
             date={project.date}
             tags={project.tags}
