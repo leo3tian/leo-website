@@ -25,6 +25,11 @@ body {
   font-family: var(--font-geist-sans);
 }
 
+.slick-prev:before,
+.slick-next:before {
+  color: #2563eb !important;
+}
+
 
 /* 
 @keyframes fadeIn {
