@@ -22,13 +22,13 @@ export default function Home() {
               &nbsp;
             </span>
             <span className="transition-all duration-300 hover:bg-gray-200">
-            My interests include intelligent systems and their applications. 
+            My interests include intelligent systems and applying them to the real world. 
             </span>
             <span>
               &nbsp;
             </span>
             <span className="transition-all duration-300 hover:bg-gray-200">
-            I&apos;m a developer for Prof. Amy Ko&apos;s Wordplay Lab and assistant for the CSE 12x courses at UW.
+            I&apos;m a Software Engineer Intern at Ignite Robotics and a TA for the CSE 12x courses at UW.
             </span>
           </div>
         </div>
