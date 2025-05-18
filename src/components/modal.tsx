@@ -80,11 +80,13 @@ export default function Modal({
                         <p className="text-gray-700">{block.value}</p>
                       )}
                       {block.type === "image" && (
-                        <div className="relative h-[300px]">
+                        <div className="relative w-full">
                           <Image
                             src={block.value}
                             alt={`Content image ${index + 1}`}
-                            fill
+                            layout="responsive"
+                            width={100}
+                            height={50}
                             className="object-contain rounded-md shadow-md border border-gray-200"
                           />
                         </div>
